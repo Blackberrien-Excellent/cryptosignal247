@@ -358,6 +358,83 @@
     table { min-width: 480px; }
     th, td { padding: 7px 8px; }
   }
+
+  /* Site Footer */
+  .site-footer {
+    background: linear-gradient(180deg, #0b0d18 0%, #05060a 100%);
+    border-top: 1px solid var(--border);
+    margin-top: 30px;
+    padding: 24px 20px 20px;
+    color: #8f97b0;
+    font-size: 12px;
+  }
+  .footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .footer-title {
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--cyan);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .footer-tagline {
+    font-size: 11.5px;
+    color: #6c728a;
+    margin-top: 2px;
+  }
+  .footer-links {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .footer-link {
+    color: #a4adca;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    transition: color 0.2s;
+  }
+  .footer-link:hover {
+    color: var(--cyan);
+  }
+  .footer-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border), transparent);
+  }
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 11.5px;
+    color: #646a82;
+  }
+  .footer-copy b {
+    color: #cbd2e8;
+  }
+  .footer-disclaimer-mini {
+    color: #555b70;
+  }
+  @media (max-width: 768px) {
+    .footer-top, .footer-bottom {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  }
 </style>
 </head>
 <body>
@@ -461,6 +538,28 @@
 </table>
 </div>
 
+
+<!-- Official Footer -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-title">CryptoSignal247 &bull; AIO-XRO</div>
+        <div class="footer-tagline">Automated 24/7 Smart Money Concepts (SMC) &amp; Order Block Detection Terminal</div>
+      </div>
+      <div class="footer-links">
+        <a href="https://t.me/CryptoPremiumLab" target="_blank" class="footer-link">Telegram Community</a>
+        <a href="https://www.tradingview.com/u/Blueberrien-Excellent" target="_blank" class="footer-link">TradingView Scripts</a>
+        <a href="https://www.facebook.com/share/1En4Kxkwn3/" target="_blank" class="footer-link">Facebook Page</a>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-bottom">
+      <div class="footer-copy">&copy; 2026 <b>CryptoSignal247</b>. All rights reserved. Developed by <b>Ghazi Abbas Haider</b>.</div>
+      <div class="footer-disclaimer-mini">For educational &amp; research purposes only. Not financial advice. Trade responsibly.</div>
+    </div>
+  </div>
+</footer>
 
 <script>
 function toggleRow(id) {
