@@ -1,0 +1,46 @@
+{
+  "last_updated": "2026-10-31 20:00:00 UTC",
+  "screener_status": "Active 24/7",
+  "signals": [
+    {
+      "symbol": "BTC/USDT",
+      "price": "68,450.00",
+      "change_24h": "+2.4%",
+      "rsi": "62.4",
+      "signal": "BUY",
+      "timeframe": "1h"
+    },
+    {
+      "symbol": "ETH/USDT",
+      "price": "3,520.10",
+      "change_24h": "+1.8%",
+      "rsi": "54.1",
+      "signal": "NEUTRAL",
+      "timeframe": "1h"
+    },
+    {
+      "symbol": "SOL/USDT",
+      "price": "182.50",
+      "change_24h": "+6.5%",
+      "rsi": "71.2",
+      "signal": "STRONG BUY",
+      "timeframe": "1h"
+    },
+    {
+      "symbol": "BNB/USDT",
+      "price": "595.00",
+      "change_24h": "-0.5%",
+      "rsi": "45.8",
+      "signal": "NEUTRAL",
+      "timeframe": "1h"
+    },
+    {
+      "symbol": "XRP/USDT",
+      "price": "0.5420",
+      "change_24h": "-1.2%",
+      "rsi": "38.0",
+      "signal": "OVERSOLD",
+      "timeframe": "1h"
+    }
+  ]
+}
