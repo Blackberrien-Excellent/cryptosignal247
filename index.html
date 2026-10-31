@@ -121,10 +121,50 @@
   .header-link:hover .btn-icon { transform: scale(1.15); }
   .link-tg { color: #29b6f6; border-color: rgba(41, 182, 246, 0.4); background: rgba(41, 182, 246, 0.1); }
   .link-tg:hover { background: rgba(41, 182, 246, 0.3); border-color: #29b6f6; color: #fff; box-shadow: 0 4px 14px rgba(41, 182, 246, 0.4); }
-  .link-tv { color: #131722; background: #ffffff; border-color: #ffffff; color: #131722; font-weight: 800; }
-  .link-tv:hover { background: #e0e3eb; border-color: #ffffff; color: #000; box-shadow: 0 4px 14px rgba(255, 255, 255, 0.4); }
+  .link-tv { color: #29b6f6; border-color: rgba(41, 182, 246, 0.4); background: rgba(41, 182, 246, 0.1); }
+  .link-tv:hover { background: rgba(41, 182, 246, 0.3); border-color: #29b6f6; color: #fff; box-shadow: 0 4px 14px rgba(41, 182, 246, 0.4); }
   .link-fb { color: #1877f2; border-color: rgba(24, 119, 242, 0.4); background: rgba(24, 119, 242, 0.1); }
   .link-fb:hover { background: rgba(24, 119, 242, 0.3); border-color: #1877f2; color: #fff; box-shadow: 0 4px 14px rgba(24, 119, 242, 0.4); }
+  /* Islamic Centerpiece */
+  .header-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 6px 14px;
+    background: rgba(0, 229, 255, 0.04);
+    border: 1px dashed rgba(0, 229, 255, 0.25);
+    border-radius: 8px;
+    flex: 0 1 auto;
+    transition: all 0.3s ease;
+  }
+  .header-center:hover {
+    border-color: var(--cyan);
+    box-shadow: 0 0 16px rgba(0, 229, 255, 0.2);
+    background: rgba(0, 229, 255, 0.07);
+  }
+  .islamic-bismillah {
+    font-family: "Traditional Arabic", "Amiri", "Scheherazade New", "Noto Naskh Arabic", serif;
+    font-size: 19px;
+    font-weight: bold;
+    color: var(--cyan);
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+    direction: rtl;
+  }
+  .islamic-durood {
+    font-family: "Traditional Arabic", "Amiri", "Scheherazade New", "Noto Naskh Arabic", serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: var(--cyan);
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+    direction: rtl;
+    margin-top: 2px;
+  }
 
   /* Disclaimer Box in Header */
   .header-disclaimer {
@@ -337,6 +377,10 @@
       </div>
       <div class="header-sub">Scan: 2026-10-31 18:47:56 UTC &bull; Symbols: 104 scanned · 0 failed</div>
     </div>
+  </div>
+    <div class="header-center">
+    <div class="islamic-bismillah">&#1576;&#1616;&#1587;&#1618;&#1605;&#1616; &#1575;&#1604;&#1604;&#1648;&#1607;&#1616; &#1575;&#1604;&#1585;&#1614;&#1617;&#1581;&#1618;&#1605;&#1648;&#1606;&#1616; &#1575;&#1604;&#1585;&#1614;&#1617;&#1581;&#1616;&#1610;&#1618;&#1605;&#1616;</div>
+    <div class="islamic-durood">&#1575;&#1604;&#1604;&#1648;&#1607;&#1615;&#1605;&#1614;&#1617; &#1589;&#1614;&#1604;&#1616;&#1617; &#1593;&#1614;&#1604;&#1648;&#1609; &#1587;&#1614;&#1610;&#1616;&#1617;&#1583;&#1616;&#1606;&#1614;&#1575; &#1605;&#1615;&#1581;&#1614;&#1605;&#1614;&#1617;&#1583;&#1616;</div>
   </div>
   <div class="header-disclaimer">
     <div class="disclaimer-badge">&#9888; Risk Warning &amp; Legal Disclaimer</div>
