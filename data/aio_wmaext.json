@@ -1,11 +1,9 @@
 {
-    "timeframe":  "1H / 4H",
-    "description":  "WMA Extreme Overbought / Oversold",
-    "total_signals":  0,
-    "strategy":  "AIO-WMAEXT",
-    "badge":  "ðŸ”´ EXTREME",
-    "signals":  [
-
-                ],
-    "last_updated":  "2026-11-27 14:07:32 UTC"
+  "strategy": "AIO-WMAEXT",
+  "description": "WMA Extreme Overbought / Oversold Detection",
+  "timeframe": "1H / 4H",
+  "badge": "ACTIVE",
+  "last_updated": "Ready for next scan",
+  "total_signals": 0,
+  "signals": []
 }
