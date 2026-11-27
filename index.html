@@ -207,20 +207,20 @@
     </div>
   </div>
   <div style="font-size:0.8rem; color:var(--text-muted);">
-    Live Status: <span style="color:var(--bull); font-weight:600;">â— Active 24/7</span>
+    Live Status: <span style="color:var(--bull); font-weight:600;"> Active 24/7</span>
   </div>
 </header>
 
 <!-- 8 AIO Tabs -->
 <nav class="nav-tabs-wrapper" id="strategyTabs">
-  <button class="tab-btn active" onclick="switchSection('aio_rsiema')">ðŸŸ¢ AIO-RSIEMA</button>
-  <button class="tab-btn" onclick="switchSection('aio_rsivwap')">ðŸ”µ AIO-RSIVWAP</button>
-  <button class="tab-btn" onclick="switchSection('aio_wmals')">ðŸŸ£ AIO-WMALS</button>
-  <button class="tab-btn" onclick="switchSection('aio_wmaext')">ðŸ”´ AIO-WMAEXT</button>
-  <button class="tab-btn" onclick="switchSection('aio_sema')">ðŸŸ¡ AIO-SEMA</button>
-  <button class="tab-btn" onclick="switchSection('aio_xro')">ðŸ”¥ AIO-XRO (1H)</button>
-  <button class="tab-btn" onclick="switchSection('aio_fvg')">âš¡ AIO-FVG (1H)</button>
-  <button class="tab-btn" onclick="switchSection('aio_orb')">ðŸš€ AIO-ORB (Daily 4H)</button>
+  <button class="tab-btn active" onclick="switchSection('aio_rsiema')"> AIO-RSIEMA</button>
+  <button class="tab-btn" onclick="switchSection('aio_rsivwap')"> AIO-RSIVWAP</button>
+  <button class="tab-btn" onclick="switchSection('aio_wmals')"> AIO-WMALS</button>
+  <button class="tab-btn" onclick="switchSection('aio_wmaext')"> AIO-WMAEXT</button>
+  <button class="tab-btn" onclick="switchSection('aio_sema')"> AIO-SEMA</button>
+  <button class="tab-btn" onclick="switchSection('aio_xro')"> AIO-XRO (1H)</button>
+  <button class="tab-btn" onclick="switchSection('aio_fvg')"> AIO-FVG (1H)</button>
+  <button class="tab-btn" onclick="switchSection('aio_orb')"> AIO-ORB (Daily 4H)</button>
 </nav>
 
 <main class="main-content">
@@ -236,7 +236,7 @@
   </div>
 
   <div class="controls-bar">
-    <input type="text" class="search-input" id="searchSym" placeholder="ðŸ” Search Coin (e.g. BTC, ETH)..." oninput="renderTable()">
+    <input type="text" class="search-input" id="searchSym" placeholder=" Search Coin (e.g. BTC, ETH)..." oninput="renderTable()">
     <select class="filter-select" id="filterSig" onchange="renderTable()">
       <option value="ALL">All Signals</option>
       <option value="BUY">BUY / LONG Only</option>
@@ -262,7 +262,7 @@
       </tbody>
     </table>
     <div id="emptyView" class="empty-state" style="display:none;">
-      <div class="icon">ðŸ“¡</div>
+      <div class="icon"></div>
       <div>No active signals found matching the criteria. Screener checks every 15 minutes.</div>
     </div>
   </div>
@@ -282,14 +282,14 @@ let currentSec = 'aio_rsiema';
 let cachedData = {};
 
 const meta = {
-  aio_rsiema: { title: "ðŸŸ¢ AIO-RSIEMA", desc: "RSI + EMA Momentum Trend Screener", tf: "15M / 1H" },
-  aio_rsivwap: { title: "ðŸ”µ AIO-RSIVWAP", desc: "RSI + VWAP Volume Weighted Deviation Screener", tf: "15M / 1H" },
-  aio_wmals: { title: "ðŸŸ£ AIO-WMALS", desc: "WMA Long / Short Trend Screener", tf: "1H / 4H" },
-  aio_wmaext: { title: "ðŸ”´ AIO-WMAEXT", desc: "WMA Extreme Overbought / Oversold Detection", tf: "1H / 4H" },
-  aio_sema: { title: "ðŸŸ¡ AIO-SEMA", desc: "SMA & EMA Crossover Screener", tf: "15M / 1H" },
-  aio_xro: { title: "ðŸ”¥ AIO-XRO", desc: "Smart Money Concepts (SMC) & Order Block Reversal Engine", tf: "1H" },
-  aio_fvg: { title: "âš¡ AIO-FVG", desc: "Fair Value Gap & Liquidity Imbalance Screener", tf: "1H" },
-  aio_orb: { title: "ðŸš€ AIO-ORB", desc: "Opening Range Breakout (Daily 1st 4H)", tf: "4H" }
+  aio_rsiema: { title: " AIO-RSIEMA", desc: "RSI + EMA Momentum Trend Screener", tf: "15M / 1H" },
+  aio_rsivwap: { title: " AIO-RSIVWAP", desc: "RSI + VWAP Volume Weighted Deviation Screener", tf: "15M / 1H" },
+  aio_wmals: { title: " AIO-WMALS", desc: "WMA Long / Short Trend Screener", tf: "1H / 4H" },
+  aio_wmaext: { title: " AIO-WMAEXT", desc: "WMA Extreme Overbought / Oversold Detection", tf: "1H / 4H" },
+  aio_sema: { title: " AIO-SEMA", desc: "SMA & EMA Crossover Screener", tf: "15M / 1H" },
+  aio_xro: { title: " AIO-XRO", desc: "Smart Money Concepts (SMC) & Order Block Reversal Engine", tf: "1H" },
+  aio_fvg: { title: " AIO-FVG", desc: "Fair Value Gap & Liquidity Imbalance Screener", tf: "1H" },
+  aio_orb: { title: " AIO-ORB", desc: "Opening Range Breakout (Daily 1st 4H)", tf: "4H" }
 };
 
 async function switchSection(secKey) {
