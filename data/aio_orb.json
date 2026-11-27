@@ -1,11 +1,9 @@
 {
-    "timeframe":  "4H",
-    "description":  "Opening Range Breakout (Daily 1st 4H)",
-    "total_signals":  0,
-    "strategy":  "AIO-ORB",
-    "badge":  "ðŸš€ BREAKOUT",
-    "signals":  [
-
-                ],
-    "last_updated":  "2026-11-27 14:07:32 UTC"
+  "strategy": "AIO-ORB",
+  "description": "Opening Range Breakout (Daily 1st 4H)",
+  "timeframe": "4H",
+  "badge": "ACTIVE",
+  "last_updated": "Ready for next scan",
+  "total_signals": 0,
+  "signals": []
 }
