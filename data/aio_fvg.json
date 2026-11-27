@@ -1,0 +1,11 @@
+{
+    "timeframe":  "1H",
+    "description":  "Fair Value Gap \u0026 Liquidity Imbalance Screener",
+    "total_signals":  0,
+    "strategy":  "AIO-FVG",
+    "badge":  "âš¡ IMBALANCE",
+    "signals":  [
+
+                ],
+    "last_updated":  "2026-11-27 14:07:32 UTC"
+}
